@@ -106,8 +106,6 @@ if("${CMAKE_BUILD_TYPE}" STREQUAL "")
 or CMAKE_C_FLAGS are used), Debug, Release, RelWithDebInfo, MinSizeRel." FORCE)
 endif()
 
-find_package(ZLIB REQUIRED)
-
 # allow the user to define additional compilation symbols
 if (EXTRA_DEFS)
   foreach(var ${EXTRA_DEFS})
