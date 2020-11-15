@@ -24,6 +24,11 @@ using namespace zipper;
 
 const std::string CDirEntry::Separator(DIRECTORY_SEPARATOR);
 
+#ifdef _WIN32
+#undef max
+#undef min
+#endif
+
 // -----------------------------------------------------------------------------
 bool CDirEntry::isFile(const std::string & path)
 {
